@@ -1,0 +1,65 @@
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.cube {
+    height: 100px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1;
+    min-width: 100px;
+}
+
+@media (max-width: 100%) {
+    .cube {
+        min-width: 100%;
+    }
+}
+
+.portfolio {
+    background-color: #e3e2dd;
+
+    animation-name: circle-to-square;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes circle-to-square {
+    from {
+        /*height: 45px;*/
+        background-color: #F498AD;
+    }
+    50% {
+        /*height: 100px;*/
+        background-color: #7F6EDB;
+    }
+    to {
+        /*height: 160px;*/
+        background-color: #2E9AFF;
+    }
+}
+
+.github {
+    background-color: #282827;
+    color: rgb(227 226 221);
+}
+
+.linkedin {
+    background-color: #a5a4a0;
+}
+
+.hh {
+    background-color: #eeede9;
+}

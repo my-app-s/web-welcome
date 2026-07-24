@@ -1,139 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
+
         <link rel="stylesheet" href="template/css/style.css">
+        <link rel="stylesheet" href="template/css/header.css">
+
         <script src="template/js/script.js" defer></script> <!--Run with JS-->
     </head>
     <body>
-        <div>
-            <div class="div-main-top"> <!--With position: relative;-->
-                <div class="div-main-top-top">
-                    <div id="div-with-portfolio" class="div-main-top-top-item"><h1>Portfolio</h1></div>
-                    <div id="div-with-github" class="div-main-top-top-item"><h1><a href="https://github.com/my-app-s" class="link-github">GitHub</a></h1></div>
-                    <div id="div-with-linkedin" class="div-main-top-top-item"><h1>Linkedin</h1></div>
-                    <div id="div-with-hh" class="div-main-top-top-item"><h1>HH</h1></div>
+        <header>
+            <nav>
+                <ul class="nav-list text-large">
+                    <li class="cube portfolio">
+                        <a class="custom-link custom-link--no-underline" href="/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+                    </li>
+                    <li class="cube github">
+                        <a class="custom-link" href="https://github.com/my-app-s" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
+                    <li class="cube linkedin">
+                        <a class="custom-link" href="https://www.linkedin.com/in/rustem-m-692916334" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                    </li>
+                    <li class="cube hh">
+                        <a class="custom-link" href="https://hh.kz/resume/82ec45adff0f0ff5f60039ed1f6f3448515845" target="_blank" rel="noopener noreferrer">HH</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container container--flex">
+                <div class="experience experience--left">
+                    <span class="text-large">Welcome!</span>
                 </div>
-                <div>
-                    <div class="div-main-body-background-text-welcome"> Welcome</div>
-                    <div class="div-main-body-background-text-portfolio"> to my portfolio page!</div>
-                    <div class="div-main-body-background-text-it-specialist"><div>IT specialist</div></div>
-                </div>
-                <div class="div-main-body">
-                    <div class="div-main-body-left">
-                        <h1>Welcome!</h1>
-                    </div>
-                    <div class="div-main-body-right">
-                        <h1>Experience in IT</h1>
-                        <p>Work experience: more than six years</p>
-                        <ul>
-                            <li><b>Telecommunications Engineer Current job since July 2022</b></li>
-                            <li>Communications Electromechanic since February 2022 to June 2022</li>
-                            <li>Computer Operator since April 2019 to September 2021</li>
-                            <li>Equipment Engineer (Computer Equipment) since August 2016 to January 2017</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="div-main-bottom-background-text-left">© Copyright 2025</div>
-                <div class="div-main-bottom-background-text-right"></div>
-                <div class="div-main-bottom-background-text-right-text">This is web my page.</div>
-            </div>
-            <div class="div-body">
-                <div class="div-body-projects"> <!--With position: absolute;-->
-                    <h2>Projects</h2>
-                    <ul class="div-body-projects-ul">
-                        <li>
-                            <p><b><a href="https://my-app-s.github.io/WSEFW/">WSEFW</a></b> - Данное веб-приложение было сделано для себя так как 
-                                нужно было примерно узнать нужный размер для Gif изображения. Данное 
-                                веб-приложение может показать предположительные размеры не точные!
-                            </p>
-                            <img src="template/image/Screenshot 2025-04-25 031041.png" alt="Not found image">
-                        </li>
+                <div class="experience experience--right">
+                    <span class="text-large">Experience in IT</span>
+                    <ul>
+                        <li><b>Telecommunications Engineer Current job since July 2022</b></li>
+                        <li>Communications Electromechanic since February 2022 to June 2022</li>
+                        <li>Computer Operator since April 2019 to September 2021</li>
+                        <li>Equipment Engineer (Computer Equipment) since August 2016 to January 2017</li>
                     </ul>
-                    <ul class="div-body-projects-ul">
-                        <li>
-                            <p>
-                                <b>
-                                    <a href="https://t.me/GetVacanciesTBot">TelegramBot @GetVacanciesTBot</a>
-                                </b> - Бот для получения вакансий.
-                            </p>
-                        </li>
-                    </ul>
-                    <ul class="div-body-projects-ul">
-                        <li>
-                            <p>
-                                <b>
-                                    <a href="https://t.me/StatisticTWBot">TelegramBot @StatisticTWBot</a>
-                                </b> - Бот для самоконтроля рабочего времени.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="div-body-cetrificate"><h2>Setrificate</h2></div>
-                <div class="div-body-cetrificate-container">
-                    <div class="div-body-cetrificate-container-item">
-                        <ul>
-                            <li>
-                                <img id="div-body-cetrificate-container-item-1" src="template/image/Certificate/00000005 image certificate export plain 1.svg" alt="Not found image">
-                                <h6>Python Programming 2021</h6>
-                            </li>
-                            <li>
-                                <img id="div-body-cetrificate-container-item-2" src="template/image/Certificate/00000005 image certificate export plain 2.svg" alt="Not found image">
-                                <h6>COURSE CERTIFICATE SQL 2021</h6>
-                            </li>
-                            <li>
-                                <img id="div-body-cetrificate-container-item-3" src="template/image/Certificate/00000005 image certificate export plain 3.svg" alt="Not found image">
-                                <h6>COURSE CERTIFICATE Python for Beginners 2021</h6>
-                            </li>
-                            <li>
-                                <img id="div-body-cetrificate-container-item-4" src="template/image/Certificate/00000005 image certificate export plain 2.svg" alt="Not found image">
-                                <h6>COURSE CERTIFICATE Python Core 2021</h6>
-                            </li>
-                            <li>
-                                <img id="div-body-cetrificate-container-item-5" src="template/image/Certificate/00000005 image certificate export plain 1.svg" alt="Not found image">
-                                <h6>COURSE CERTIFICATE HTML 2021</h6>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="div-body-cetrificate-container-item">
-                        <ul>
-                            <li>
-                                <img id="div-body-cetrificate-container-item-6" src="template/image/Certificate/00000005 image certificate export plain 3.svg" alt="Not found image">
-                                <h6>COURSE CERTIFICATE CSS 2021</h6>
-                            </li>
-                            <li>
-                                <img id="div-body-cetrificate-container-item-7" src="template/image/Certificate/00000005 image certificate export plain 2.svg" alt="Not found image">
-                                <h6>COURSE CERTIFICATE Intermediate Python 2022</h6>
-                            </li>
-                            <li>
-                                <img id="div-body-cetrificate-container-item-8" src="template/image/Certificate/00000005 image certificate export plain 3.svg" alt="Not found image">
-                                <h6>Docker для начинающих + практический опыт 2024</h6>
-                            </li>
-                            <li>
-                                <img id="div-body-cetrificate-container-item-9" src="template/image/Certificate/00000005 image certificate export plain 1.svg" alt="Not found image">
-                                <h6>Software testing from scratch. Theory + Practice 2025</h6>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="div-body-cetrificate-container-item">
-                        <ul>
-                            <li>
-                                <img id="div-body-cetrificate-container-item-10" src="template/image/Certificate/00000005 image certificate export plain 3.svg" alt="Not found image">
-                                <h6>The English alphabet</h6>
-                            </li>
-                            <li>
-                                <img id="div-body-cetrificate-container-item-11" src="template/image/Certificate/00000005 image certificate export plain 2.svg" alt="Not found image">
-                                <h6>Programming in Golang</h6>
-                            </li>
-                            <li>
-                                <img id="div-body-cetrificate-container-item-12" src="template/image/Certificate/00000005 image certificate export plain 3.svg" alt="Not found image">
-                                <h6>PRO Go. Основы программирования</h6>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
-        </div>
+            <section class="container">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <p><b><a href="https://my-app-s.github.io/WSEFW/">WSEFW</a></b> - Данное веб-приложение было сделано для себя так как 
+                            нужно было примерно узнать нужный размер для Gif изображения. Данное 
+                            веб-приложение может показать предположительные размеры не точные!
+                        </p>
+                        <img src="template/image/Screenshot 2025-04-25 031041.png" alt="Not found image">
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                <a href="https://t.me/GetVacanciesTBot">TelegramBot @GetVacanciesTBot</a>
+                            </b> - Бот для получения вакансий.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                <a href="https://t.me/StatisticTWBot">TelegramBot @StatisticTWBot</a>
+                            </b> - Бот для самоконтроля рабочего времени.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <section class="container container--flex">
+                <div class="copyright">© Copyright 2025</div>
+                <div class="footer-text">Welcome this is web my portfolio page!</div>
+            </section>
+        </footer>
     </body>
 </html>

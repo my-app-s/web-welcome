@@ -8,298 +8,65 @@ body {
     margin: 0;
 }
 
-/* Style for div main */
-.div-main-top {
-    position: relative;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: 700px;
     margin: 0 auto;
-    width: 720px; /* Max width for main div */
 }
 
-.div-main-top-top {
+.container--flex {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.div-main-top-top-item {
-    height: 100px;
+.experience {
+    width: 50%;
+    height: 710px;
+    padding: 10px;
+
     flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: center;
 }
-/* ---------- */
-/* Portfolio */
-#div-with-portfolio {
+
+.experience--left {
     background-color: #e3e2dd;
-    animation-name: circle-to-square;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-    z-index: -1; /* Перемещает на задний фон */
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
 }
 
-@keyframes circle-to-square {
-    from {
-        height: 45px;
-        background-color: #F498AD;
-    }
-    50% {
-        height: 100px;
-        background-color: #7F6EDB;
-    }
-    to {
-        height: 160px;
-        background-color: #2E9AFF;
-    }
-}
-/* ---------- */
-/* GitHub */
-#div-with-github {
-    background-color: #282827;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: center;
-    cursor: pointer;
-}
-
-.link-github {
-    color: rgb(227 226 221); /* Color before for link */
-}
-
-.link-github:hover {
-    color: rgb(227 226 221); /* Color after for link */
-}
-/* ---------- */
-/* Linkedin */
-#div-with-linkedin {
-    background-color: #a5a4a0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: center;
-    cursor: pointer;
-}
-/* ---------- */
-/* HH */
-#div-with-hh {
+.experience--right {
     background-color: #eeede9;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: center;
-    cursor: pointer;
-}
-/* ---------- */
-/* Background text */
-.div-main-body-background-text-welcome {
-    position: absolute; /* Позволяет управлять расположением */
-    padding: 10px;
-    color: #eeede9;
-    top: 139px;
-    left: 85px;
-    width: 10px;
-    height: 17px;
-    font-size: 18px;
-    z-index: -1; /* Перемещает на задний фон */
-}
-.div-main-body-background-text-portfolio {
-    position: absolute; /* Позволяет управлять расположением */
-    padding: 10px;
-    border-top-right-radius: 15px; /* Верхний правый угол */
-    border-bottom-right-radius: 15px; /* Нижний правый угол */
-    color:#eeede9;
-    top: 140px;
-    left: 173px;
-    width: 10px;
-    height: 17px;
-    z-index: -1; /* Перемещает на задний фон */
-    animation-name: circle-to-square-for-div-body-background-text;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in;
+    border-bottom: 1px solid #ccc;
 }
 
-@keyframes circle-to-square-for-div-body-background-text {
-    from {
-        width: 10px;
-        background-color: #F498AD;
-    }
-    80% {
-        width: 527px;
-        background-color: #2E9AFF;
-    }
-    to {
-        width: 527px;
-        background-color: #7F6EDB;
-    }
+.text-large {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-.div-main-body-background-text-it-specialist {
-    position: absolute; /* Позволяет управлять расположением */
-    top: 82px;
-    left: 46px;
-    z-index: -2; /* Перемещает на задний фон за .div-body-background-text-welcome*/
+.custom-link {
+    color: inherit;
 }
 
-.div-main-bottom-background-text-left {
-    position: absolute; /* Позволяет управлять расположением */
-    top: 868px;
-    width: 126px;
-    height: 16px;
+/*decorator link delete underline*/
+.custom-link--no-underline {
+    text-decoration: none;
+}
+
+.copyright {
+    padding: 10px;
     font-size: 11px;
     text-align: center;
     background-color: #282827;
     color: #eeede9;
-    z-index: -1; /* Перемещает на задний фон */
 }
 
-.div-main-bottom-background-text-right {
-    position: absolute; /* Позволяет управлять расположением */
-    top: 868px;
-    left: 151px;
-    width: 0px;
-    height: 16px;
-    border-top-right-radius: 15px; /* Верхний правый угол */
-    border-bottom-right-radius: 15px; /* Нижний правый угол */
-    background-color: #080bdf;
-    z-index: -1; /* Перемещает на задний фон */
-    animation-name: circle-to-square-for-div-bottom-background-text-right;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in;
+.footer-text {
+    color: #7F6EDB;
 }
-
-@keyframes circle-to-square-for-div-bottom-background-text-right {
-    from {
-        width: 10px;
-        background-color: #F498AD;
-    }
-    80% {
-        width: 557px;
-        background-color: #2E9AFF;
-    }
-    to {
-        width: 557px;
-        background-color: #7F6EDB;
-    }
-}
-
-.div-main-bottom-background-text-right-text {
-    position: absolute; /* Позволяет управлять расположением */
-    top: 868px;
-    left: 361px;
-    width: 200px;
-    height: 16px;
-    border-top-right-radius: 15px; /* Верхний правый угол */
-    border-bottom-right-radius: 15px; /* Нижний правый угол */
-    color: #eeede9;
-}
-/* ---------- */
-/* Body div left and right */
-.div-main-body {
-    display: flex;
-    height: 1000px; /* For normal view bottom */
-}
-
-.div-main-body-left {
-    flex: 1;
-    background-color: #e3e2dd;
-    padding: 10px;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    height: 710px;
-    text-align: right;
-}
-
-.div-main-body-right {
-    flex: 1;
-    background-color: #eeede9;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    height: 710px;
-}
-/* ---------- */
-/* Div projects */
-
-.div-body {
-    position: absolute;
-    top: 1650px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 720px; /* Max width for main div */
-    background-color: #eeede9;
-}
-
-.div-body-projects {
-    text-align: center;
-}
-
-.div-body-projects-ul {
-    background-color: #eeede9; /* Нежный фон */
-    border-left: 4px solid #007BFF; /* Цветная линия сбоку */
-    padding: 15px; /* Внутренние отступы */
-    margin: 20px 0; /* Отступы от других элементов */
-    font-family: 'Arial', sans-serif; /* Аккуратный шрифт */
-    font-size: 16px; /* Размер шрифта */
-    color: #333; /* Цвет текста */
-    line-height: 1.6; /* Увеличенный интерлиньяж для читаемости */
-    animation: randome-border-color 5s infinite;
-    list-style-type: none; /* Disable list numder style */
-}
-
-@keyframes randome-border-color {
-    0% {
-        border-left-color: #F498AD; /* Синий цвет */
-    }
-    50% {
-        border-left-color: #2E9AFF; /* Оранжевый цвет */
-    }
-    100% {
-        border-left-color: #7F6EDB; /* Зеленый цвет */
-    }
-}
-
-.div-body-projects-ul p {
-    margin: 0; /* Убираем стандартные отступы у параграфа */
-}
-
-.div-body-projects-ul p strong {
-    color: #007BFF; /* Цвет выделенных слов */
-}
-
-.div-body-projects-ul p em {
-    color: #555; /* Цвет для текста курсивом */
-    font-style: italic;
-}
-
-.div-body-projects-ul img {
-    width: 700px;
-    height: 400px;
-}
-/* ---------- */
-/* Div setrificate */
-
-.div-body-cetrificate {
-    text-align: center;
-    background-color: #e3e2dd;
-}
-
-.div-body-cetrificate-container{
-    display: flex;
-}
-
-.div-body-cetrificate-container-item {
-    flex: 1;
-}
-
-.div-body-cetrificate-container-item img {
-    cursor: pointer;
-}
-
-.div-body-cetrificate-container-item h6 {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-}
-/* ---------- */
