@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +15,13 @@
             <nav>
                 <ul class="nav-list text-large">
                     <li class="cube portfolio">
-                        <a class="custom-link custom-link--no-underline" href="/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+                        <a class="custom-link custom-link--no-underline" href="https://my-app-s.github.io/web-welcome/" target="_blank" rel="noopener noreferrer">Portfolio</a>
                     </li>
                     <li class="cube github">
                         <a class="custom-link" href="https://github.com/my-app-s" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </li>
                     <li class="cube linkedin">
-                        <a class="custom-link" href="https://www.linkedin.com/in/rustem-m-692916334" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                        <a class="custom-link" href="https://www.linkedin.com/in/rustem-m-692916334" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </li>
                     <li class="cube hh">
                         <a class="custom-link" href="https://hh.kz/resume/82ec45adff0f0ff5f60039ed1f6f3448515845" target="_blank" rel="noopener noreferrer">HH</a>
@@ -31,11 +31,37 @@
         </header>
 
         <main>
+            <div class="container container--flex container--gap">
+                <section class="about">
+                    <h1>IT Specialist</h1>
+                    <p>
+                        I have 7+ years of experience in IT support and networking. 
+                        This background gave me a solid foundation: I'm comfortable 
+                        with the Linux CLI, understand networking (TCP/IP, routing, ports), 
+                        and can containerize apps with Docker. I’m currently focused on backend 
+                        development using Go and PostgreSQL. While I am a junior in commercial 
+                        software engineering, I am looking for a team where I can apply 
+                        my infrastructure background and grow as a developer.
+                    </p>
+                </section>
+                <section class="stack">
+                    <h2>Stack</h2>
+                    <ul>
+                        <li>Go</li>
+                        <li>PostgreSQL</li>
+                        <li>REST API</li>
+                        <li>Docker</li>
+                        <li>Linux</li>
+                        <li>Git</li>
+                        <li>Bash</li>
+                    </ul>
+                </section>
+            </div>
             <div class="container container--flex">
-                <div class="experience experience--left">
+                <section class="experience experience--left">
                     <span class="text-large">Welcome!</span>
-                </div>
-                <div class="experience experience--right">
+                </section >
+                <section class="experience experience--right">
                     <span class="text-large">Experience in IT</span>
                     <ul>
                         <li><b>Telecommunications Engineer Current job since July 2022</b></li>
@@ -43,34 +69,119 @@
                         <li>Computer Operator since April 2019 to September 2021</li>
                         <li>Equipment Engineer (Computer Equipment) since August 2016 to January 2017</li>
                     </ul>
-                </div>
+                </section >
             </div>
-            <section class="container">
+            <div class="container container--gap">
                 <h2>Projects</h2>
-                <ul>
-                    <li>
-                        <p><b><a href="https://my-app-s.github.io/WSEFW/">WSEFW</a></b> - Данное веб-приложение было сделано для себя так как 
-                            нужно было примерно узнать нужный размер для Gif изображения. Данное 
-                            веб-приложение может показать предположительные размеры не точные!
-                        </p>
-                        <img src="template/image/Screenshot 2025-04-25 031041.png" alt="Not found image">
-                    </li>
-                    <li>
-                        <p>
-                            <b>
-                                <a href="https://t.me/GetVacanciesTBot">TelegramBot @GetVacanciesTBot</a>
-                            </b> - Бот для получения вакансий.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <b>
-                                <a href="https://t.me/StatisticTWBot">TelegramBot @StatisticTWBot</a>
-                            </b> - Бот для самоконтроля рабочего времени.
-                        </p>
-                    </li>
-                </ul>
-            </section>
+                <section class="project">
+                    <section class="info">
+                        <h3>
+                            <a href="https://my-app-s.github.io/WSEFW/" target="_blank" rel="noopener noreferrer">
+                                WSEFW
+                            </a>
+                        </h3>
+                        <h3>Stack</h3>
+                        <ul>
+                            <li>JS</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </section>
+                    <section class="text">
+                        - Данное веб-приложение было сделано для себя так как 
+                        нужно было примерно узнать нужный размер для Gif изображения. Данное 
+                        веб-приложение может показать предположительные размеры не точные!
+                    </section>
+                    <img src="template/image/Screenshot 2025-04-25 031041.png" alt="Not found image">
+                </section>
+                <section class="project">
+                    <section class="info">
+                        <h3>
+                            <a href="https://github.com/my-app-s/go-custom-router" target="_blank" rel="noopener noreferrer">
+                                go-custom-router
+                            </a>
+                        </h3>
+                        <h4>Stack</h4>
+                        <ul>
+                            <li>Go</li>
+                        </ul>
+                    </section>
+                    <section class="text">
+                        - Легкий, быстрый и устойчивый HTTP-роутер для приложений на Go. 
+                        Проект ориентирован на простоту, надежность и удобство расширения.
+                    </section>
+                </section>
+                <section class="project">
+                    <section class="info">
+                        <h3>
+                            <a href="https://github.com/my-app-s/go-generator" target="_blank" rel="noopener noreferrer">
+                                go-generator
+                            </a>
+                        </h3>
+                        <h4>Stack</h4>
+                        <ul>
+                            <li>Go</li>
+                            <li>HTML</li>
+                        </ul>
+                    </section>
+                    <section class="text">
+                        - Простой и быстрый генератор статических страниц, написанный на Go.
+                    </section>
+                </section>
+                <section class="project">
+                    <section class="info">
+                        <h3>
+                            <a href="https://github.com/my-app-s/go-heart-bot" target="_blank" rel="noopener noreferrer">
+                                go-heart-bot
+                            </a>
+                        </h3>
+                        <h4>Stack</h4>
+                        <ul>
+                            <li>Go</li>
+                        </ul>
+                    </section>
+                    <section class="text">
+                        - Библиотека для упрощённого создания Telegram-ботов на языке Go. 
+                        Проект ориентирован на простоту, надежность и удобство расширения.
+                    </section>
+                </section>
+                <section class="project">
+                    <section class="info">
+                        <h3>
+                            <a href="https://github.com/my-app-s/portainer-stack" target="_blank" rel="noopener noreferrer">
+                                portainer-stack
+                            </a>
+                        </h3>
+                        <h4>Stack</h4>
+                        <ul>
+                            <li>Docker</li>
+                            <li>Docker compose</li>
+                        </ul>
+                    </section>
+                    <section class="text">
+                        - This configuration deploys a container management environment 
+                        based on Portainer CE with a Traefik reverse proxy. It supports automatic 
+                        routing and SSL certificate management (Self-Signed or Let's Encrypt via ACME).
+                    </section>
+                </section>
+                <section class="project">
+                    <section class="info">
+                        <h3>
+                            <a href="https://github.com/my-app-s/postgresql-stack" target="_blank" rel="noopener noreferrer">
+                                postgresql-stack
+                            </a>
+                        </h3>
+                        <h4>Stack</h4>
+                        <ul>
+                            <li>Docker</li>
+                            <li>Docker compose</li>
+                        </ul>
+                    </section>
+                    <section class="text">
+                        - This is a recipe for deploy container postgresql and pgAdmin as tools.
+                    </section>
+                </section>
+            </div>
         </main>
 
         <footer>

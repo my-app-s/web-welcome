@@ -25,6 +25,10 @@ img {
     flex-wrap: wrap;
 }
 
+.container--gap {
+    gap: 10px;
+}
+
 .experience {
     width: 50%;
     height: 710px;
@@ -69,4 +73,36 @@ img {
 
 .footer-text {
     color: #7F6EDB;
+}
+
+.about{
+    color: #7F6EDB;
+
+    flex: 1;
+}
+
+.stack {
+
+    flex: 1;
+}
+
+.info {
+    flex: 1;
+}
+
+.project {
+    max-width: 700px;
+    margin: 0 auto;
+
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text{
+    color: #7F6EDB;
+
+    flex: 1;
 }
