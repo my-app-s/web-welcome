@@ -76,12 +76,14 @@ img {
 }
 
 .about{
+    padding: 10px;
     color: #7F6EDB;
 
     flex: 1;
 }
 
 .stack {
+    padding: 10px;
 
     flex: 1;
 }
