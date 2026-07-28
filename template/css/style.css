@@ -17,6 +17,7 @@ img {
 .container {
     max-width: 700px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .container--flex {
@@ -76,14 +77,12 @@ img {
 }
 
 .about{
-    padding: 10px;
     color: #7F6EDB;
 
     flex: 1;
 }
 
 .stack {
-    padding: 10px;
 
     flex: 1;
 }
