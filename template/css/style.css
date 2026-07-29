@@ -1,4 +1,4 @@
-body {
+html, body {
     font-family: Aileron, Arial, Helvetica, sans-serif;
     background-color: #eeede9;
     /* user-select: none; /* Отключает выделение текста */
@@ -6,14 +6,10 @@ body {
     /* -ms-user-select: none; /* Для старых версий Internet Explorer */
     /* min-height: 100vh; /* Убедимся, что высота страницы занимает весь экран */
     margin: 0;
+    padding: 0;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
+/*container*/
 .container {
     max-width: 700px;
     margin: 0 auto;
@@ -32,7 +28,90 @@ img {
 .container--padding {
     padding: 10px;
 }
+/*container*/
 
+/*nav*/
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (min-width: 560px) {
+    .nav-list {
+        flex-wrap: nowrap;
+    }
+}
+
+.cube {
+    height: 100px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1;
+}
+
+.portfolio {
+    background-color: #e3e2dd;
+
+    animation-name: circle-to-square;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes circle-to-square {
+    from {
+        background-color: #F498AD;
+    }
+    50% {
+        background-color: #7F6EDB;
+    }
+    to {
+        background-color: #2E9AFF;
+    }
+}
+
+.github {
+    background-color: #282827;
+    color: rgb(227 226 221);
+}
+
+.linkedin {
+    background-color: #a5a4a0;
+}
+
+.hh {
+    background-color: #eeede9;
+}
+/*nav*/
+
+/*about*/
+.about{
+    padding: 10px;
+    color: #7F6EDB;
+
+    flex: 1;
+}
+/*about*/
+
+/*stack*/
+.stack {
+    padding: 10px;
+
+    flex: 1;
+}
+/*stack*/
+
+/*experience*/
 .experience {
     width: 50%;
     height: 710px;
@@ -51,6 +130,37 @@ img {
 .experience--right {
     background-color: #eeede9;
     border-bottom: 1px solid #ccc;
+    padding-top: 15px;
+}
+/*experience*/
+
+/*projects*/
+.project {
+    margin: 0;
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-name {
+    flex: 1;
+}
+
+.project-text{
+    padding: 20px;
+    color: #7F6EDB;
+
+    flex: 1;
+}
+/*projects*/
+
+/*other*/
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .text-large {
@@ -66,7 +176,9 @@ img {
 .custom-link--no-underline {
     text-decoration: none;
 }
+/*other*/
 
+/*footer*/
 .copyright {
     padding: 10px;
     font-size: 11px;
@@ -78,37 +190,4 @@ img {
 .footer-text {
     color: #7F6EDB;
 }
-
-.about{
-    padding: 10px;
-    color: #7F6EDB;
-
-    flex: 1;
-}
-
-.stack {
-    padding: 10px;
-
-    flex: 1;
-}
-
-.info {
-    flex: 1;
-}
-
-.project {
-    max-width: 700px;
-    margin: 0 auto;
-
-    padding: 15px;
-
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.text{
-    color: #7F6EDB;
-
-    flex: 1;
-}
+/*footer*/
