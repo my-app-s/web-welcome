@@ -28,14 +28,6 @@ html, body {
 .container--padding {
     padding: 10px;
 }
-
-.container--center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    flex: 1;
-}
 /*container*/
 
 /*nav*/
