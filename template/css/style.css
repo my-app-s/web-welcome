@@ -1,10 +1,6 @@
 html, body {
     font-family: Aileron, Arial, Helvetica, sans-serif;
     background-color: #eeede9;
-    /* user-select: none; /* Отключает выделение текста */
-    /* -webkit-user-select: none; /* Для браузеров на основе WebKit */
-    /* -ms-user-select: none; /* Для старых версий Internet Explorer */
-    /* min-height: 100vh; /* Убедимся, что высота страницы занимает весь экран */
     margin: 0;
     padding: 0;
 }
