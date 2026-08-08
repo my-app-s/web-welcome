@@ -3,6 +3,8 @@ html, body {
     background-color: #eeede9;
     margin: 0;
     padding: 0;
+
+    scroll-behavior: smooth;
 }
 
 /*container*/
@@ -140,15 +142,28 @@ html, body {
     flex-wrap: wrap;
 }
 
-.project-name {
+.project-left {
+    background-color: #eeede9;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
     flex: 1;
+}
+
+.project-right {
+    background-color: #e3e2dd;
+    border-bottom: 1px solid #ccc;
+
+    flex: 1;
+}
+
+.project-name {
+    color: #2E9AFF;
 }
 
 .project-text{
     padding: 20px;
     color: #7F6EDB;
-
-    flex: 1;
 }
 /*projects*/
 
