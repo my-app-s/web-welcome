@@ -6,7 +6,7 @@ function About() {
                 <section className="about">
                     <h1>Go Developer</h1>
                     <p>
-                        I have <strong>7+ years of experience</strong> in IT infrastructure and networking, including 
+                        I have <strong>7+ years of experience</strong> in IT infrastructure and networking, including{' '}
                         <strong>Linux, TCP/IP, DNS, DHCP, routing, and Docker</strong>. 
                     </p>
                     <p>
