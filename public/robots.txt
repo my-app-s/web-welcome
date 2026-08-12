@@ -1,0 +1,16 @@
+# Разрешаем индексацию для всех адекватных поисковиков
+User-agent: *
+Allow: /
+
+# Блокируем SEO-пауков и парсеры
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Карта сайта (если появится позже)
+# Sitemap: https://my-app-s.github.io/web-welcome/sitemap.xml

@@ -1,0 +1,22 @@
+/*experience*/
+.experience {
+    width: 50%;
+    height: 710px;
+    padding: 10px;
+
+    flex: 1;
+}
+
+.experience--left {
+    background-color: #e3e2dd;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+}
+
+.experience--right {
+    background-color: #eeede9;
+    border-bottom: 1px solid #ccc;
+    padding-top: 15px;
+}
+/*experience*/

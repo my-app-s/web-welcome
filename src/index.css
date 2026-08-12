@@ -1,0 +1,30 @@
+html, body {
+    font-family: Aileron, Arial, Helvetica, sans-serif;
+    background-color: #eeede9;
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+}
+
+/*other*/
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-large {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.custom-link {
+    color: inherit;
+}
+
+/*decorator link delete underline*/
+.custom-link--no-underline {
+    text-decoration: none;
+}
+/*other*/

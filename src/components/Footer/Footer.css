@@ -1,0 +1,17 @@
+/*footer*/
+.copyright {
+    padding: 10px;
+    font-size: 11px;
+    text-align: center;
+    background-color: #282827;
+    color: #eeede9;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #7F6EDB;
+}
+/*footer*/

@@ -1,0 +1,20 @@
+/*container*/
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.container--flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container--gap {
+    gap: 10px;
+}
+
+.container--padding {
+    padding: 10px;
+}
+/*container*/

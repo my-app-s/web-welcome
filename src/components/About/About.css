@@ -1,0 +1,16 @@
+/*about*/
+.about{
+    padding: 10px;
+    color: #7F6EDB;
+
+    flex: 1;
+}
+/*about*/
+
+/*stack*/
+.stack {
+    padding: 15px;
+
+    flex: 1;
+}
+/*stack*/

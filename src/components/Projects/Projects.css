@@ -1,0 +1,34 @@
+/*projects*/
+.project {
+    margin: 0;
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-left {
+    background-color: #eeede9;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+    flex: 1;
+}
+
+.project-right {
+    background-color: #e3e2dd;
+    border-bottom: 1px solid #ccc;
+
+    flex: 1;
+}
+
+.project-name {
+    color: #2E9AFF;
+}
+
+.project-text{
+    padding: 20px;
+    color: #7F6EDB;
+}
+/*projects*/
