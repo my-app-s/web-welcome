@@ -7,7 +7,7 @@ This is my welcome web site. As pet-project for experience frontend developer.
 ![Static Badge](https://img.shields.io/badge/React-24214e?logo=React)
 ![Static Badge](https://img.shields.io/badge/Vite-24214e?logo=Vite)
 ![Static Badge](https://img.shields.io/badge/HTML5-24214e?logo=HTML5)
-![Static Badge](https://img.shields.io/badge/CSS-24214e?logo=CSS)
+![Static Badge](https://img.shields.io/badge/CSS3-24214e?logo=CSS)
 ![Static Badge](https://img.shields.io/badge/JavaScript-24214e?logo=JavaScript)
 
 ## 📜 Disclaimer
