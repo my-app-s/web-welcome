@@ -5,7 +5,7 @@ function Footer() {
         <footer>
             <div className="container container--flex">
                 <section className="copyright">
-                    © Copyright 2025
+                    © Copyright 2026
                 </section>
                 <section className="footer-text">
                     <a href="#nav">
