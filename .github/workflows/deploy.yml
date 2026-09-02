@@ -2,8 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    - 'src/**'
-    - 'README.md'
+    paths:
+      - 'src/**'
+      - 'README.md'
   workflow_dispatch:
 
 permissions:
