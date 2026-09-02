@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    - src/**
+    - 'src/**'
     - 'README.md'
   workflow_dispatch:
 
