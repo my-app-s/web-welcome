@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+tailwindcss-linux-x64
+output.css
+diff.txt

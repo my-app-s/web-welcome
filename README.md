@@ -11,6 +11,10 @@ This is my welcome web site. As pet-project for experience frontend developer.
 ![Static Badge](https://img.shields.io/badge/JavaScript-24214e?logo=JavaScript)
 ![Static Badge](https://img.shields.io/badge/JavaScript-24214e?logo=Tailwind CSS v4)
 
+> Status Github Actions
+> 
+> ![Status GitHub Pages](https://github.com/my-app-s/go-api-ping/actions/workflows/deploy.yml/badge.svg)
+
 ## Disclaimer & License
 
 * **Short Disclaimer (EN)**: Materials are provided ***as is*** under the LICENSE file. No warranties. Authors are not liable for damages. No partnership or obligations created.
