@@ -37,9 +37,9 @@ function Nav() {
     return (
         <header className='mx-auto max-w-2xl px-4 sm:px-0'>
             <nav>
-                <ul className="m-0 p-0 flex flex-col sm:flex-row justify-between list-none text-xl sm:text-2xl font-bold">
+                <ul className="m-0 p-0 flex flex-wrap justify-between list-none text-xl sm:text-2xl font-bold">
                     {NAV_LINKS.map((item) => (
-                        <li key={item.id} className={`flex flex-1 justify-center items-center h-16 sm:h-[100px] w-full text-center ${item.liClass}`}>
+                        <li key={item.id} className={`flex justify-center items-center h-16 sm:h-[100px] w-[48%] sm:flex-1 text-center mb-2 sm:mb-0 ${item.liClass}`}>
                             <a
                                 className={item.linkClass}
                                 href={item.href}
