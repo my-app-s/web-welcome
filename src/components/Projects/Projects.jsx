@@ -1,5 +1,3 @@
-import './Projects.css';
-
 const PROJECTS = [
   {
     id: 'go-heart-bot',
@@ -40,33 +38,52 @@ const PROJECTS = [
 
 function Projects() {
   return (
-    <div className="container container--gap container--padding">
-      <h2>Projects</h2>
+    <section className="max-w-2xl mx-auto p-3 flex flex-col gap-6">
+      <h2 className="text-xl font-bold">Projects</h2>
 
-      {PROJECTS.map((project) => (
-        <article key={project.id} className="project">
-          <div className="project-left">
-            <div className="project-name">
-              <h3>{project.name}</h3>
-              <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                GitHub
-              </a>
+      <div className="flex flex-col gap-4">
+        {PROJECTS.map((project) => (
+          <article 
+            key={project.id} 
+            className="flex flex-col sm:flex-row bg-custom-bg border border-neutral-300 rounded-lg overflow-hidden"
+          >
+            <div className="p-4 flex flex-col justify-between flex-1 gap-4 border-b sm:border-b-0 sm:border-r border-neutral-300">
               <div>
-                <h4>Stack</h4>
-                <ul>
+                <h3 className="text-custom-project-name font-semibold text-lg">{project.name}</h3>
+                <a 
+                  href={project.githubUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm text-blue-600 hover:underline inline-block mt-1"
+                >
+                  GitHub &rarr;
+                </a>
+              </div>
+
+              <div>
+                <h4 className="text-xs font-medium uppercase tracking-wider text-neutral-500 mb-2">Stack</h4>
+                <ul className="flex flex-wrap gap-1.5">
                   {project.stack.map((item) => (
-                    <li key={item}>{item}</li>
+                    <li 
+                      key={item}
+                      className="text-xs bg-blue-400 px-2 py-1 rounded-md text-custom-github-text"
+                    >
+                      {item}
+                    </li>
                   ))}
                 </ul>
               </div>
             </div>
-          </div>
-          <div className="project-right">
-            <p className="project-text">{project.description}</p>
-          </div>
-        </article>
-      ))}
-    </div>
+
+            <div className="p-4 flex-1 bg-custom-left flex items-center">
+              <p className="text-custom-project-text text-sm leading-relaxed">
+                {project.description}
+              </p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
   )
 }
 

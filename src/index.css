@@ -1,30 +1,24 @@
-html, body {
-    font-family: Aileron, Arial, Helvetica, sans-serif;
-    background-color: #eeede9;
-    margin: 0;
-    padding: 0;
+@import "tailwindcss";
 
-    scroll-behavior: smooth;
+@theme {
+    --color-custom-bg: #eeede9;
+    --color-custom-github: #282827;
+    --color-custom-github-text: rgb(227 226 221);
+    --color-custom-linkedin: #a5a4a0;
+    --color-custom-left: #e3e2dd;
+    --color-custom-purple: #7F6EDB;
+    --color-custom-project-name: #2E9AFF;
+    --color-custom-project-text: #7F6EDB;
 }
 
-/*other*/
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+@keyframes circle-to-square {
+    from {
+        background-color: #F498AD;
+    }
+    50% {
+        background-color: #7F6EDB;
+    }
+    to {
+        background-color: #2E9AFF;
+    }
 }
-
-.text-large {
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.custom-link {
-    color: inherit;
-}
-
-/*decorator link delete underline*/
-.custom-link--no-underline {
-    text-decoration: none;
-}
-/*other*/
