@@ -1,13 +1,13 @@
 function Footer() {
-    return(
+    return (
         <footer>
-            <div className="max-w-2xl mx-auto text-custom-github-text text-sm">
-                <section className="flex justify-center items-center h-6 bg-black">
+            <div className="mx-auto max-w-2xl px-4 text-sm text-custom-github-text">
+                <section className="flex h-auto min-h-6 flex-wrap items-center justify-center bg-black py-2 text-center leading-tight">
                     © Copyright 2026 my-app-s(M.R.E) Content rights belong to the author.
                 </section>
             </div>
         </footer>
-    )
+    );
 }
 
-export default Footer
+export default Footer;

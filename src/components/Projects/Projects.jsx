@@ -38,7 +38,7 @@ const PROJECTS = [
 
 function Projects() {
   return (
-    <section className="max-w-2xl mx-auto p-3 flex flex-col gap-6">
+    <section className="mx-auto max-w-2xl p-3 flex flex-col gap-6">
       <h2 className="text-xl font-bold">Projects</h2>
 
       <div className="flex flex-col gap-4">
@@ -76,7 +76,7 @@ function Projects() {
             </div>
 
             <div className="p-4 flex-1 bg-custom-left flex items-center">
-              <p className="text-custom-project-text text-sm leading-relaxed">
+              <p className="text-custom-project-text text-sm leading-relaxed break-words w-full">
                 {project.description}
               </p>
             </div>
@@ -84,7 +84,7 @@ function Projects() {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default Projects
+export default Projects;
