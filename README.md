@@ -9,6 +9,7 @@ This is my welcome web site. As pet-project for experience frontend developer.
 ![Static Badge](https://img.shields.io/badge/HTML5-24214e?logo=HTML5)
 ![Static Badge](https://img.shields.io/badge/CSS3-24214e?logo=CSS)
 ![Static Badge](https://img.shields.io/badge/JavaScript-24214e?logo=JavaScript)
+![Static Badge](https://img.shields.io/badge/JavaScript-24214e?logo=Tailwind CSS v4)
 
 ## Disclaimer & License
 
