@@ -1,48 +1,62 @@
-const PROJECTS = [
-  {
-    id: 'go-heart-bot',
-    name: 'go-heart-bot',
-    githubUrl: 'https://github.com/my-app-s/go-heart-bot',
-    stack: ['Go'],
-    description: 'A library for simplified creation of Telegram bots in Go. The project is focused on simplicity, reliability, and ease of expansion.',
-  },
-  {
-    id: 'go-custom-router',
-    name: 'go-custom-router',
-    githubUrl: 'https://github.com/my-app-s/go-custom-router',
-    stack: ['Go'],
-    description: 'A lightweight, fast, and robust HTTP router for Go applications. The project is focused on simplicity, reliability, and ease of extension.',
-  },
-  {
-    id: 'go-generator',
-    name: 'go-generator',
-    githubUrl: 'https://github.com/my-app-s/go-generator',
-    stack: ['Go', 'HTML'],
-    description: 'A simple and fast static page generator written in Go.',
-  },
-  {
-    id: 'portainer-stack',
-    name: 'portainer-stack',
-    githubUrl: 'https://github.com/my-app-s/portainer-stack',
-    stack: ['Docker', 'Docker compose'],
-    description: "Production-ready container management setup with Portainer CE and Traefik reverse proxy, featuring automatic routing and SSL certificate management (ACME / Let's Encrypt).",
-  },
-  {
-    id: 'postgresql-stack',
-    name: 'postgresql-stack',
-    githubUrl: 'https://github.com/my-app-s/postgresql-stack',
-    stack: ['Docker', 'Docker compose'],
-    description: 'This is a recipe for deploy container postgresql and pgAdmin as tools.',
-  },
-];
+import { useEffect, useState } from "react";
 
 function Projects() {
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    async function fetchProjects() {
+      try {
+        const response = await fetch('https://api.github.com/users/my-app-s/repos?sort=updated&per_page=100');
+        if (!response.ok) {
+          throw new Error("Failed to fetch repositories");
+        }
+        const data = await response.json();
+
+        // Список названий репозиториев (поле name из GitHub API), которые нужно скрыть
+        const excludedRepos = ["my-app-s"];
+
+        // Объединяем фильтрацию форков и скрытых репозиториев в один подход
+        const filteredData = data.filter(
+          (repo) => !repo.fork && !excludedRepos.includes(repo.name)
+        );
+        
+        // Map GitHub API response fields to match your UI expectations if necessary, 
+        // or ensure your API data supplies 'description', 'html_url', etc.
+        const formattedProjects = filteredData.map((repo) => ({
+          id: repo.id,
+          name: repo.name,
+          githubUrl: repo.html_url,
+          description: repo.description || "No description provided.",
+          stack: repo.language ? [repo.language] : [] // GitHub API returns a single primary language per repo
+        }));
+
+        setProjects(formattedProjects);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchProjects();
+  }, []);
+
+  if (loading) {
+    return <div className="text-center p-6 text-neutral-500">Loading projects...</div>;
+  }
+
+  if (error) {
+    return <div className="text-center p-6 text-red-500">Error: {error}</div>;
+  }
+
   return (
     <section className="mx-auto max-w-2xl p-3 flex flex-col gap-6">
       <h2 className="text-xl font-bold">Projects</h2>
 
       <div className="flex flex-col gap-4">
-        {PROJECTS.map((project) => (
+        {projects.map((project) => (
           <article 
             key={project.id} 
             className="flex flex-col sm:flex-row bg-custom-bg border border-neutral-300 rounded-lg overflow-hidden"
